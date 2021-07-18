@@ -1375,19 +1375,17 @@ class GamePage extends egret.DisplayObjectContainer {
             clearTimeout(timer)
         }, 2000)
     }
-
-
     //监听自己游戏过程中断线
-    public listen_Offline() {
-        wx.showToast({
-            title: '您已断线',
-            icon: 'none',
-            duration: 2000,
-        })
-        if (!this.isGameOver) {
-            this.overGame(GameOverResult.LOSE)
-        }
-    }
+    // public listen_MyOffline() {
+    //     wx.showToast({
+    //         title: '您已断线',
+    //         icon: 'none',
+    //         duration: 2000,
+    //     })
+    //     if (!this.isGameOver) {
+    //         this.overGame(GameOverResult.LOSE)
+    //     }
+    // }
     //通知：发表情
     private notice_Emoj(emojNumber: number) {
         if (this.isRobotModel) {
